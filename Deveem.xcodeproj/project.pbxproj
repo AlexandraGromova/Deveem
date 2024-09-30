@@ -1,0 +1,759 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D905B8B82CA67ABE00DB5163 /* LocalSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D905B8B72CA67ABE00DB5163 /* LocalSource.swift */; };
+		D905B8BA2CA67AEF00DB5163 /* ProductsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D905B8B92CA67AEF00DB5163 /* ProductsRepository.swift */; };
+		D905B8BE2CA6B38D00DB5163 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D905B8BD2CA6B38D00DB5163 /* RealmSwift */; };
+		D905B8C02CA6B5E200DB5163 /* RealmProductsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D905B8BF2CA6B5E200DB5163 /* RealmProductsModel.swift */; };
+		D905B8C22CA6C2A900DB5163 /* ListProductsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D905B8C12CA6C2A900DB5163 /* ListProductsScreen.swift */; };
+		D905B8C42CA6C2C500DB5163 /* ListProductsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D905B8C32CA6C2C500DB5163 /* ListProductsVM.swift */; };
+		D905B8C72CA7EA1C00DB5163 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = D905B8C62CA7EA1C00DB5163 /* Swinject */; };
+		D905B8C92CA7EA4B00DB5163 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D905B8C82CA7EA4B00DB5163 /* AppContainer.swift */; };
+		D905B8CF2CAA074000DB5163 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D905B8CE2CAA074000DB5163 /* ProductCell.swift */; };
+		D905B8D22CAA081E00DB5163 /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D905B8D12CAA081E00DB5163 /* TopBar.swift */; };
+		D905B8D42CAA0B0A00DB5163 /* CategoriesMenuPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D905B8D32CAA0B0A00DB5163 /* CategoriesMenuPopup.swift */; };
+		D905B8D62CAA26D300DB5163 /* ProductSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D905B8D52CAA26D300DB5163 /* ProductSheet.swift */; };
+		D905B8D92CAA4ABE00DB5163 /* ListCartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D905B8D82CAA4ABE00DB5163 /* ListCartScreen.swift */; };
+		D905B8DB2CAA753A00DB5163 /* ListCartVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D905B8DA2CAA753A00DB5163 /* ListCartVM.swift */; };
+		D905B8DD2CAA92BF00DB5163 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D905B8DC2CAA92BF00DB5163 /* SplashScreen.swift */; };
+		D905B8DF2CAA967500DB5163 /* SplashScreenVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D905B8DE2CAA967500DB5163 /* SplashScreenVM.swift */; };
+		D905B8E32CAA9C4A00DB5163 /* RealmExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D905B8E22CAA9C4A00DB5163 /* RealmExtensions.swift */; };
+		D905B8E52CAAA60F00DB5163 /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D905B8E42CAAA60F00DB5163 /* CartCell.swift */; };
+		D9C8123F2CA55C87008B814B /* DeveemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C8123E2CA55C87008B814B /* DeveemApp.swift */; };
+		D9C812412CA55C87008B814B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C812402CA55C87008B814B /* ContentView.swift */; };
+		D9C812432CA55C8B008B814B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9C812422CA55C8B008B814B /* Assets.xcassets */; };
+		D9C812462CA55C8B008B814B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9C812452CA55C8B008B814B /* Preview Assets.xcassets */; };
+		D9C812502CA55C8B008B814B /* DeveemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C8124F2CA55C8B008B814B /* DeveemTests.swift */; };
+		D9C8125A2CA55C8B008B814B /* DeveemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C812592CA55C8B008B814B /* DeveemUITests.swift */; };
+		D9C8125C2CA55C8B008B814B /* DeveemUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C8125B2CA55C8B008B814B /* DeveemUITestsLaunchTests.swift */; };
+		D9C8126B2CA56313008B814B /* RemoteSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C8126A2CA56313008B814B /* RemoteSource.swift */; };
+		D9C8126D2CA563D7008B814B /* ProductsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C8126C2CA563D7008B814B /* ProductsModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9C8124C2CA55C8B008B814B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9C812332CA55C87008B814B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9C8123A2CA55C87008B814B;
+			remoteInfo = Deveem;
+		};
+		D9C812562CA55C8B008B814B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9C812332CA55C87008B814B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9C8123A2CA55C87008B814B;
+			remoteInfo = Deveem;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D905B8B72CA67ABE00DB5163 /* LocalSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalSource.swift; sourceTree = "<group>"; };
+		D905B8B92CA67AEF00DB5163 /* ProductsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRepository.swift; sourceTree = "<group>"; };
+		D905B8BF2CA6B5E200DB5163 /* RealmProductsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmProductsModel.swift; sourceTree = "<group>"; };
+		D905B8C12CA6C2A900DB5163 /* ListProductsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProductsScreen.swift; sourceTree = "<group>"; };
+		D905B8C32CA6C2C500DB5163 /* ListProductsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProductsVM.swift; sourceTree = "<group>"; };
+		D905B8C82CA7EA4B00DB5163 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		D905B8CE2CAA074000DB5163 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		D905B8D12CAA081E00DB5163 /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
+		D905B8D32CAA0B0A00DB5163 /* CategoriesMenuPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesMenuPopup.swift; sourceTree = "<group>"; };
+		D905B8D52CAA26D300DB5163 /* ProductSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSheet.swift; sourceTree = "<group>"; };
+		D905B8D82CAA4ABE00DB5163 /* ListCartScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCartScreen.swift; sourceTree = "<group>"; };
+		D905B8DA2CAA753A00DB5163 /* ListCartVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCartVM.swift; sourceTree = "<group>"; };
+		D905B8DC2CAA92BF00DB5163 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		D905B8DE2CAA967500DB5163 /* SplashScreenVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVM.swift; sourceTree = "<group>"; };
+		D905B8E22CAA9C4A00DB5163 /* RealmExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmExtensions.swift; sourceTree = "<group>"; };
+		D905B8E42CAAA60F00DB5163 /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
+		D9C8123B2CA55C87008B814B /* Deveem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deveem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9C8123E2CA55C87008B814B /* DeveemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveemApp.swift; sourceTree = "<group>"; };
+		D9C812402CA55C87008B814B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D9C812422CA55C8B008B814B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9C812452CA55C8B008B814B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D9C8124B2CA55C8B008B814B /* DeveemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeveemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9C8124F2CA55C8B008B814B /* DeveemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveemTests.swift; sourceTree = "<group>"; };
+		D9C812552CA55C8B008B814B /* DeveemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeveemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9C812592CA55C8B008B814B /* DeveemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveemUITests.swift; sourceTree = "<group>"; };
+		D9C8125B2CA55C8B008B814B /* DeveemUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveemUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D9C8126A2CA56313008B814B /* RemoteSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteSource.swift; sourceTree = "<group>"; };
+		D9C8126C2CA563D7008B814B /* ProductsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9C812382CA55C87008B814B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D905B8BE2CA6B38D00DB5163 /* RealmSwift in Frameworks */,
+				D905B8C72CA7EA1C00DB5163 /* Swinject in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9C812482CA55C8B008B814B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9C812522CA55C8B008B814B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D905B8B62CA67A9200DB5163 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D9C8126C2CA563D7008B814B /* ProductsModel.swift */,
+				D905B8BF2CA6B5E200DB5163 /* RealmProductsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D905B8D02CAA07D100DB5163 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				D905B8CE2CAA074000DB5163 /* ProductCell.swift */,
+				D905B8D52CAA26D300DB5163 /* ProductSheet.swift */,
+				D905B8E42CAAA60F00DB5163 /* CartCell.swift */,
+				D905B8D32CAA0B0A00DB5163 /* CategoriesMenuPopup.swift */,
+				D905B8D12CAA081E00DB5163 /* TopBar.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		D905B8D72CAA357600DB5163 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D905B8B72CA67ABE00DB5163 /* LocalSource.swift */,
+				D9C8126A2CA56313008B814B /* RemoteSource.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D905B8E02CAA968600DB5163 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				D905B8B92CA67AEF00DB5163 /* ProductsRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		D905B8E12CAA9C2600DB5163 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D905B8E22CAA9C4A00DB5163 /* RealmExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D9C812322CA55C87008B814B = {
+			isa = PBXGroup;
+			children = (
+				D9C8123D2CA55C87008B814B /* Deveem */,
+				D9C8124E2CA55C8B008B814B /* DeveemTests */,
+				D9C812582CA55C8B008B814B /* DeveemUITests */,
+				D9C8123C2CA55C87008B814B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9C8123C2CA55C87008B814B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9C8123B2CA55C87008B814B /* Deveem.app */,
+				D9C8124B2CA55C8B008B814B /* DeveemTests.xctest */,
+				D9C812552CA55C8B008B814B /* DeveemUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9C8123D2CA55C87008B814B /* Deveem */ = {
+			isa = PBXGroup;
+			children = (
+				D9C8123E2CA55C87008B814B /* DeveemApp.swift */,
+				D905B8C82CA7EA4B00DB5163 /* AppContainer.swift */,
+				D9C812682CA562CC008B814B /* Screens */,
+				D9C812692CA562EB008B814B /* VM */,
+				D905B8E02CAA968600DB5163 /* Repositories */,
+				D905B8D72CAA357600DB5163 /* Services */,
+				D905B8B62CA67A9200DB5163 /* Models */,
+				D905B8D02CAA07D100DB5163 /* UIComponents */,
+				D905B8E12CAA9C2600DB5163 /* Extensions */,
+				D9C812422CA55C8B008B814B /* Assets.xcassets */,
+				D9C812442CA55C8B008B814B /* Preview Content */,
+			);
+			path = Deveem;
+			sourceTree = "<group>";
+		};
+		D9C812442CA55C8B008B814B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D9C812452CA55C8B008B814B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D9C8124E2CA55C8B008B814B /* DeveemTests */ = {
+			isa = PBXGroup;
+			children = (
+				D9C8124F2CA55C8B008B814B /* DeveemTests.swift */,
+			);
+			path = DeveemTests;
+			sourceTree = "<group>";
+		};
+		D9C812582CA55C8B008B814B /* DeveemUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D9C812592CA55C8B008B814B /* DeveemUITests.swift */,
+				D9C8125B2CA55C8B008B814B /* DeveemUITestsLaunchTests.swift */,
+			);
+			path = DeveemUITests;
+			sourceTree = "<group>";
+		};
+		D9C812682CA562CC008B814B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				D9C812402CA55C87008B814B /* ContentView.swift */,
+				D905B8DC2CAA92BF00DB5163 /* SplashScreen.swift */,
+				D905B8D82CAA4ABE00DB5163 /* ListCartScreen.swift */,
+				D905B8C12CA6C2A900DB5163 /* ListProductsScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		D9C812692CA562EB008B814B /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				D905B8C32CA6C2C500DB5163 /* ListProductsVM.swift */,
+				D905B8DA2CAA753A00DB5163 /* ListCartVM.swift */,
+				D905B8DE2CAA967500DB5163 /* SplashScreenVM.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9C8123A2CA55C87008B814B /* Deveem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9C8125F2CA55C8B008B814B /* Build configuration list for PBXNativeTarget "Deveem" */;
+			buildPhases = (
+				D9C812372CA55C87008B814B /* Sources */,
+				D9C812382CA55C87008B814B /* Frameworks */,
+				D9C812392CA55C87008B814B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Deveem;
+			packageProductDependencies = (
+				D905B8BD2CA6B38D00DB5163 /* RealmSwift */,
+				D905B8C62CA7EA1C00DB5163 /* Swinject */,
+			);
+			productName = Deveem;
+			productReference = D9C8123B2CA55C87008B814B /* Deveem.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D9C8124A2CA55C8B008B814B /* DeveemTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9C812622CA55C8B008B814B /* Build configuration list for PBXNativeTarget "DeveemTests" */;
+			buildPhases = (
+				D9C812472CA55C8B008B814B /* Sources */,
+				D9C812482CA55C8B008B814B /* Frameworks */,
+				D9C812492CA55C8B008B814B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9C8124D2CA55C8B008B814B /* PBXTargetDependency */,
+			);
+			name = DeveemTests;
+			productName = DeveemTests;
+			productReference = D9C8124B2CA55C8B008B814B /* DeveemTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D9C812542CA55C8B008B814B /* DeveemUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9C812652CA55C8B008B814B /* Build configuration list for PBXNativeTarget "DeveemUITests" */;
+			buildPhases = (
+				D9C812512CA55C8B008B814B /* Sources */,
+				D9C812522CA55C8B008B814B /* Frameworks */,
+				D9C812532CA55C8B008B814B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9C812572CA55C8B008B814B /* PBXTargetDependency */,
+			);
+			name = DeveemUITests;
+			productName = DeveemUITests;
+			productReference = D9C812552CA55C8B008B814B /* DeveemUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9C812332CA55C87008B814B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					D9C8123A2CA55C87008B814B = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					D9C8124A2CA55C8B008B814B = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = D9C8123A2CA55C87008B814B;
+					};
+					D9C812542CA55C8B008B814B = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = D9C8123A2CA55C87008B814B;
+					};
+				};
+			};
+			buildConfigurationList = D9C812362CA55C87008B814B /* Build configuration list for PBXProject "Deveem" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D9C812322CA55C87008B814B;
+			packageReferences = (
+				D905B8BC2CA6B38D00DB5163 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				D905B8C52CA7EA1C00DB5163 /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
+			productRefGroup = D9C8123C2CA55C87008B814B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9C8123A2CA55C87008B814B /* Deveem */,
+				D9C8124A2CA55C8B008B814B /* DeveemTests */,
+				D9C812542CA55C8B008B814B /* DeveemUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9C812392CA55C87008B814B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9C812462CA55C8B008B814B /* Preview Assets.xcassets in Resources */,
+				D9C812432CA55C8B008B814B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9C812492CA55C8B008B814B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9C812532CA55C8B008B814B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9C812372CA55C87008B814B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D905B8C02CA6B5E200DB5163 /* RealmProductsModel.swift in Sources */,
+				D905B8C42CA6C2C500DB5163 /* ListProductsVM.swift in Sources */,
+				D905B8D92CAA4ABE00DB5163 /* ListCartScreen.swift in Sources */,
+				D9C812412CA55C87008B814B /* ContentView.swift in Sources */,
+				D905B8DB2CAA753A00DB5163 /* ListCartVM.swift in Sources */,
+				D905B8B82CA67ABE00DB5163 /* LocalSource.swift in Sources */,
+				D905B8E32CAA9C4A00DB5163 /* RealmExtensions.swift in Sources */,
+				D905B8D22CAA081E00DB5163 /* TopBar.swift in Sources */,
+				D905B8C22CA6C2A900DB5163 /* ListProductsScreen.swift in Sources */,
+				D905B8CF2CAA074000DB5163 /* ProductCell.swift in Sources */,
+				D905B8DF2CAA967500DB5163 /* SplashScreenVM.swift in Sources */,
+				D905B8E52CAAA60F00DB5163 /* CartCell.swift in Sources */,
+				D905B8DD2CAA92BF00DB5163 /* SplashScreen.swift in Sources */,
+				D905B8D42CAA0B0A00DB5163 /* CategoriesMenuPopup.swift in Sources */,
+				D905B8D62CAA26D300DB5163 /* ProductSheet.swift in Sources */,
+				D9C8123F2CA55C87008B814B /* DeveemApp.swift in Sources */,
+				D9C8126B2CA56313008B814B /* RemoteSource.swift in Sources */,
+				D905B8C92CA7EA4B00DB5163 /* AppContainer.swift in Sources */,
+				D9C8126D2CA563D7008B814B /* ProductsModel.swift in Sources */,
+				D905B8BA2CA67AEF00DB5163 /* ProductsRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9C812472CA55C8B008B814B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9C812502CA55C8B008B814B /* DeveemTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9C812512CA55C8B008B814B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9C8125C2CA55C8B008B814B /* DeveemUITestsLaunchTests.swift in Sources */,
+				D9C8125A2CA55C8B008B814B /* DeveemUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D9C8124D2CA55C8B008B814B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9C8123A2CA55C87008B814B /* Deveem */;
+			targetProxy = D9C8124C2CA55C8B008B814B /* PBXContainerItemProxy */;
+		};
+		D9C812572CA55C8B008B814B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9C8123A2CA55C87008B814B /* Deveem */;
+			targetProxy = D9C812562CA55C8B008B814B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D9C8125D2CA55C8B008B814B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D9C8125E2CA55C8B008B814B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9C812602CA55C8B008B814B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Deveem/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SashaGromova.Deveem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D9C812612CA55C8B008B814B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Deveem/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SashaGromova.Deveem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D9C812632CA55C8B008B814B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SashaGromova.DeveemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Deveem.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Deveem";
+			};
+			name = Debug;
+		};
+		D9C812642CA55C8B008B814B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SashaGromova.DeveemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Deveem.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Deveem";
+			};
+			name = Release;
+		};
+		D9C812662CA55C8B008B814B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SashaGromova.DeveemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Deveem;
+			};
+			name = Debug;
+		};
+		D9C812672CA55C8B008B814B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SashaGromova.DeveemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Deveem;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9C812362CA55C87008B814B /* Build configuration list for PBXProject "Deveem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9C8125D2CA55C8B008B814B /* Debug */,
+				D9C8125E2CA55C8B008B814B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9C8125F2CA55C8B008B814B /* Build configuration list for PBXNativeTarget "Deveem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9C812602CA55C8B008B814B /* Debug */,
+				D9C812612CA55C8B008B814B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9C812622CA55C8B008B814B /* Build configuration list for PBXNativeTarget "DeveemTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9C812632CA55C8B008B814B /* Debug */,
+				D9C812642CA55C8B008B814B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9C812652CA55C8B008B814B /* Build configuration list for PBXNativeTarget "DeveemUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9C812662CA55C8B008B814B /* Debug */,
+				D9C812672CA55C8B008B814B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D905B8BC2CA6B38D00DB5163 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+		D905B8C52CA7EA1C00DB5163 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D905B8BD2CA6B38D00DB5163 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D905B8BC2CA6B38D00DB5163 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		D905B8C62CA7EA1C00DB5163 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D905B8C52CA7EA1C00DB5163 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D9C812332CA55C87008B814B /* Project object */;
+}
