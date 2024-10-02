@@ -53,7 +53,7 @@ struct CartCell: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                 Spacer()
                 HStack() {
-                    Text(String(format: "%.2f", product.price))
+                    Text(String(format: "%.0f", product.price))
                         .font(.system(size: 28)) +
                     Text("$")
                         .font(.system(size: 20))

@@ -10,19 +10,26 @@ import SwiftUI
 struct ListCartScreen: View {
     
     @StateObject var vm = AppContainer.resolve(ListCartVM.self)
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
-        ScrollView(.vertical) {
-            LazyVStack(spacing: 16) {
-                ForEach(Array(vm.products.enumerated()), id: \.element) { index, item in
-                    CartCell(product: item)
-                        .clipShape(RoundedRectangle(cornerRadius: 24))
-                        .padding(.horizontal, 16)
+        VStack() {
+            TopBarCart() {
+                dismiss()
+            }
+            .frame(height: 120)
+            ScrollView(.vertical) {
+                LazyVStack(spacing: 0) {
+                    ForEach(Array(vm.products.enumerated()), id: \.element) { index, item in
+                        CartCell(product: item)
+                            .clipShape(RoundedRectangle(cornerRadius: 24))
+                            .padding(.horizontal, 16)
+                            .padding(.vertical, 8)
+                    }
                 }
             }
+            .padding(.bottom, 32)
         }
-        .background(.grayLight)
-        .ignoresSafeArea()
         .scrollIndicators(.never)
         .mask(
             VStack(spacing: 0) {
@@ -35,8 +42,21 @@ struct ListCartScreen: View {
                     startPoint: UnitPoint(x: 0.5, y: 0),
                     endPoint: UnitPoint(x: 0.5, y: 1)
                 )
-                .frame(height: 100)
+                .frame(height: 84)
             }
         )
+        .overlay() {
+            VStack() {
+                Spacer()
+                CustomButton(buttonText: "BUY", buttonImage: "bag_full", buttonColor: .black, textColor: .white, imageColor: .white) {
+                    print("BUY")
+                }
+                .padding(.bottom, 40)
+            }
+        }
+        .navigationBarBackButtonHidden(true)
+        .ignoresSafeArea()
+        .background(.grayLight)
     }
 }
+

@@ -25,6 +25,8 @@
 		D905B8DF2CAA967500DB5163 /* SplashScreenVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D905B8DE2CAA967500DB5163 /* SplashScreenVM.swift */; };
 		D905B8E32CAA9C4A00DB5163 /* RealmExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D905B8E22CAA9C4A00DB5163 /* RealmExtensions.swift */; };
 		D905B8E52CAAA60F00DB5163 /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D905B8E42CAAA60F00DB5163 /* CartCell.swift */; };
+		D905B8E72CACE0C600DB5163 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D905B8E62CACE0C600DB5163 /* CustomButton.swift */; };
+		D905B8E92CAD035300DB5163 /* TopBarCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D905B8E82CAD035300DB5163 /* TopBarCart.swift */; };
 		D9C8123F2CA55C87008B814B /* DeveemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C8123E2CA55C87008B814B /* DeveemApp.swift */; };
 		D9C812412CA55C87008B814B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C812402CA55C87008B814B /* ContentView.swift */; };
 		D9C812432CA55C8B008B814B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9C812422CA55C8B008B814B /* Assets.xcassets */; };
@@ -70,6 +72,8 @@
 		D905B8DE2CAA967500DB5163 /* SplashScreenVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVM.swift; sourceTree = "<group>"; };
 		D905B8E22CAA9C4A00DB5163 /* RealmExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmExtensions.swift; sourceTree = "<group>"; };
 		D905B8E42CAAA60F00DB5163 /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
+		D905B8E62CACE0C600DB5163 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		D905B8E82CAD035300DB5163 /* TopBarCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarCart.swift; sourceTree = "<group>"; };
 		D9C8123B2CA55C87008B814B /* Deveem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deveem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9C8123E2CA55C87008B814B /* DeveemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveemApp.swift; sourceTree = "<group>"; };
 		D9C812402CA55C87008B814B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -126,6 +130,8 @@
 				D905B8CE2CAA074000DB5163 /* ProductCell.swift */,
 				D905B8D52CAA26D300DB5163 /* ProductSheet.swift */,
 				D905B8E42CAAA60F00DB5163 /* CartCell.swift */,
+				D905B8E82CAD035300DB5163 /* TopBarCart.swift */,
+				D905B8E62CACE0C600DB5163 /* CustomButton.swift */,
 				D905B8D32CAA0B0A00DB5163 /* CategoriesMenuPopup.swift */,
 				D905B8D12CAA081E00DB5163 /* TopBar.swift */,
 			);
@@ -384,12 +390,14 @@
 				D905B8D92CAA4ABE00DB5163 /* ListCartScreen.swift in Sources */,
 				D9C812412CA55C87008B814B /* ContentView.swift in Sources */,
 				D905B8DB2CAA753A00DB5163 /* ListCartVM.swift in Sources */,
+				D905B8E92CAD035300DB5163 /* TopBarCart.swift in Sources */,
 				D905B8B82CA67ABE00DB5163 /* LocalSource.swift in Sources */,
 				D905B8E32CAA9C4A00DB5163 /* RealmExtensions.swift in Sources */,
 				D905B8D22CAA081E00DB5163 /* TopBar.swift in Sources */,
 				D905B8C22CA6C2A900DB5163 /* ListProductsScreen.swift in Sources */,
 				D905B8CF2CAA074000DB5163 /* ProductCell.swift in Sources */,
 				D905B8DF2CAA967500DB5163 /* SplashScreenVM.swift in Sources */,
+				D905B8E72CACE0C600DB5163 /* CustomButton.swift in Sources */,
 				D905B8E52CAAA60F00DB5163 /* CartCell.swift in Sources */,
 				D905B8DD2CAA92BF00DB5163 /* SplashScreen.swift in Sources */,
 				D905B8D42CAA0B0A00DB5163 /* CategoriesMenuPopup.swift in Sources */,

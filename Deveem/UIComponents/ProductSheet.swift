@@ -78,27 +78,9 @@ struct ProductSheet: View {
                     .foregroundStyle(.gray)
             }
             .padding(16)
-            Button {
+            CustomButton(buttonText: "ADD TO CART", buttonImage: "cart_plus", buttonColor: .white, textColor: .black, imageColor: .black) {
                 tapAddToCart()
                 selectedSheetProduct = nil
-            } label: {
-                HStack() {
-                    Text("ADD TO CART")
-                        .font(.system(size: 20).bold())
-                        .foregroundStyle(.black)
-                    Spacer()
-                    Image("cart_plus")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(height: 24)
-                }
-                .padding(18)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 40)
-                        .stroke(Color.black, lineWidth: 1)
-                )
-                .padding(.horizontal, 16)
-                
             }
         }
     }
