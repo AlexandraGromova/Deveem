@@ -38,7 +38,6 @@ struct CustomButton: View {
                 RoundedRectangle(cornerRadius: 40)
                     .stroke(Color.black, lineWidth: 1)
             )
-            .padding(.horizontal, 16)
         }
     }
 }

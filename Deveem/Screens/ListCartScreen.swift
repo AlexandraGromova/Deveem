@@ -10,6 +10,7 @@ import SwiftUI
 struct ListCartScreen: View {
     
     @StateObject var vm = AppContainer.resolve(ListCartVM.self)
+    @State private var showAlert = false
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
@@ -21,10 +22,12 @@ struct ListCartScreen: View {
             ScrollView(.vertical) {
                 LazyVStack(spacing: 0) {
                     ForEach(Array(vm.products.enumerated()), id: \.element) { index, item in
-                        CartCell(product: item)
-                            .clipShape(RoundedRectangle(cornerRadius: 24))
-                            .padding(.horizontal, 16)
-                            .padding(.vertical, 8)
+                        CartCell(product: item) {
+                            vm.removeProduct(product: item)
+                        }
+                        .clipShape(RoundedRectangle(cornerRadius: 24))
+                        .padding(.horizontal, 16)
+                        .padding(.vertical, 8)
                     }
                 }
             }
@@ -48,10 +51,25 @@ struct ListCartScreen: View {
         .overlay() {
             VStack() {
                 Spacer()
-                CustomButton(buttonText: "BUY", buttonImage: "bag_full", buttonColor: .black, textColor: .white, imageColor: .white) {
-                    print("BUY")
+                CustomButton(buttonText: vm.products.isEmpty ? "Add something" : "BUY" ,
+                             buttonImage: vm.products.isEmpty ? "bag_empty" : "bag_full",
+                             buttonColor: vm.products.isEmpty ? .clear : .black,
+                             textColor: vm.products.isEmpty ? .black : .white,
+                             imageColor: vm.products.isEmpty ? .black : .white) {
+                    if vm.products.isEmpty {
+                        dismiss()
+                    } else {
+                        showAlert = true
+                    }
                 }
-                .padding(.bottom, 40)
+                             .padding(.horizontal, 16)
+                             .padding(.bottom, 40)
+            }
+            .alert("Make a purchase", isPresented: $showAlert) {
+                Button("OK") {
+                    vm.removeProducts()
+                }
+                Button("No", role: .cancel) {}
             }
         }
         .navigationBarBackButtonHidden(true)

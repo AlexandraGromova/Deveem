@@ -12,6 +12,7 @@ import SwiftUI
 struct CartCell: View {
     
     var product: ProductRealm
+    var remove: () -> ()
     
     var body: some View {
         HStack() {
@@ -60,7 +61,7 @@ struct CartCell: View {
                         .foregroundStyle(.gray)
                     Spacer()
                     Button{
-                        print("remove from userdefault")
+                        remove()
                     } label: {
                         Image("cart_minus")
                             .resizable()

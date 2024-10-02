@@ -49,7 +49,7 @@ class ListProductsVM: ObservableObject {
             currentCart.append(data)
             UserDefaults.standard.set(currentCart, forKey: "cart")
         } catch {
-            print("Failed to encode product: \(error)")
+            print("Failed to encode product:\(error)")
         }
     }
 }

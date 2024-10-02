@@ -81,6 +81,7 @@ struct ListProductsScreen: View {
                                             .sheet(item: $selectedSheetProduct) { product in
                                                 ProductSheet(product: product, selectedSheetProduct: $selectedSheetProduct) {
                                                     vm.addToCart(product: product)
+                                                } tapGoToCart: {
                                                     navigateToCart = true
                                                 }
                                                 .presentationDragIndicator(.visible)
@@ -103,6 +104,8 @@ struct ListProductsScreen: View {
                                             .sheet(item: $selectedSheetProduct) { product in
                                                 ProductSheet(product: product, selectedSheetProduct: $selectedSheetProduct) {
                                                     vm.addToCart(product: product)
+                                                } tapGoToCart: {
+                                                    navigateToCart = true
                                                 }
                                                 .presentationDragIndicator(.visible)
                                                 .presentationDetents([.fraction(0.93)])
