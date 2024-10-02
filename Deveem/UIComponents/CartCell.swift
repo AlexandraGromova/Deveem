@@ -21,6 +21,7 @@ struct CartCell: View {
                     .scaledToFit()
                     .padding(16)
                     .background(.white)
+                    .frame(maxWidth: .infinity)
             } else {
                 AsyncImage(url: URL(string: (product.image))) { image in
                     image
@@ -28,6 +29,7 @@ struct CartCell: View {
                         .scaledToFit()
                         .background(.white)
                         .padding(16)
+                        .frame(maxWidth: .infinity)
                 } placeholder: {
                     Rectangle()
                         .fill(
@@ -39,20 +41,24 @@ struct CartCell: View {
                         )
                         .scaledToFit()
                         .padding(16)
+                        .frame(maxWidth: .infinity)
                 }
                 .background(.white)
             }
             Divider()
             VStack() {
                 Text("\(product.title)")
-                    .font(.system(size: 12))
-                    .lineLimit(2)
+                    .font(.system(size: 16))
+                    .lineLimit(3)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                Spacer()
                 HStack() {
                     Text(String(format: "%.2f", product.price))
-                        .font(.system(size: 16)) +
+                        .font(.system(size: 28)) +
                     Text("$")
-                        .font(.system(size: 16))
+                        .font(.system(size: 20))
                         .foregroundStyle(.gray)
+                    Spacer()
                     Button{
                         print("remove from userdefault")
                     } label: {
@@ -61,9 +67,10 @@ struct CartCell: View {
                             .scaledToFit()
                             .frame(height: 24)
                     }
-                    
                 }
             }
+            .padding(16)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
         .background(.white)
     }
