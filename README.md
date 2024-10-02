@@ -1,6 +1,7 @@
   <br>
 <p align="center">
-<img src="https://github.com/user-attachments/assets/7a036446-949e-44bc-892a-a1ffc51b6121"/>
+<img src="https://github.com/user-attachments/assets/dc4c0e49-2f6b-4800-9cf5-fa16cc4ea950"
+"/>
 </p>
   
   ## Tech stack & Open-source libraries
@@ -23,12 +24,12 @@ Logic:
 
  - [ ] Error handling
  - [ ] Do UIModel for Product
- - [ ] Remove Product from Cart
+ - [x] Remove Product from Cart
 
 UI:
- - [ ] Add Button to SheetProduct to go to cart
- - [ ] Change layout SheetProduct
- - [ ] Change layout Cart
-    - [ ] Add Button "BYU"
-    - [ ] Add Button "ADD SOMETHING"
- - [ ] Change CartCell
+ - [x] Add Button to SheetProduct to go to cart
+ - [x] Change layout SheetProduct
+ - [x] Change layout Cart
+    - [x] Add Button "BYU"
+    - [x] Add Button "ADD SOMETHING"
+ - [x] Change CartCell
